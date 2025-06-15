@@ -4,3 +4,5 @@ requests
 transformers
 pydantic
 python-dotenv
+torch
+tensorflow
