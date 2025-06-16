@@ -3,6 +3,10 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     min-height: 100vh;
+    transition: background 0.3s;
+}
+body.dark {
+    background: linear-gradient(120deg, #23272f 0%, #181c22 100%);
 }
 .chat-container {
     max-width: 480px;
@@ -14,6 +18,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    transition: background 0.3s, color 0.3s;
+    position: relative;
+}
+body.dark .chat-container {
+    background: #23272f;
+    color: #f1f1f1;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
 }
 .chat-container h2 {
     text-align: center;
@@ -22,6 +33,10 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
     font-size: 1.3em;
+    transition: color 0.3s;
+}
+body.dark .chat-container h2 {
+    color: #e3eafc;
 }
 .chat-box {
     height: 340px;
@@ -33,6 +48,12 @@ body {
     background: #f7fafd;
     font-size: 1rem;
     box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+body.dark .chat-box {
+    background: #181c22;
+    color: #f1f1f1;
+    border: 1px solid #23272f;
 }
 .message {
     margin-bottom: 14px;
@@ -45,10 +66,16 @@ body {
     color: #1976d2;
     font-weight: 500;
 }
+body.dark .user {
+    color: #90caf9;
+}
 .bot {
     text-align: left;
     color: #222;
     font-weight: 500;
+}
+body.dark .bot {
+    color: #f1f1f1;
 }
 .feedback-ui {
     margin-top: 6px;
@@ -65,9 +92,16 @@ body {
     border-radius: 3px;
     transition: color 0.2s, background 0.2s;
 }
+body.dark .feedback-ui button {
+    color: #90caf9;
+}
 .feedback-ui button:hover {
     color: #1976d2;
     background: #e3eafc;
+}
+body.dark .feedback-ui button:hover {
+    color: #fff;
+    background: #1976d2;
 }
 #chat-form {
     display: flex;
@@ -80,11 +114,20 @@ body {
     border: 1px solid #b0bec5;
     font-size: 1rem;
     outline: none;
-    transition: border 0.2s;
+    transition: border 0.2s, background 0.3s, color 0.3s;
     background: #f8fafc;
+    color: #222;
+}
+body.dark #user-input {
+    background: #23272f;
+    color: #f1f1f1;
+    border: 1px solid #444b5a;
 }
 #user-input:focus {
     border: 1.5px solid #1976d2;
+}
+body.dark #user-input:focus {
+    border: 1.5px solid #90caf9;
 }
 button[type="submit"] {
     background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
@@ -102,11 +145,51 @@ button[type="submit"]:hover {
     background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
 }
+body.dark button[type="submit"] {
+    background: linear-gradient(90deg, #23272f 60%, #1976d2 100%);
+    color: #fff;
+}
 ::-webkit-scrollbar {
     width: 8px;
     background: #e3e8ee;
 }
+body.dark ::-webkit-scrollbar {
+    background: #23272f;
+}
 ::-webkit-scrollbar-thumb {
     background: #b0bec5;
     border-radius: 4px;
+}
+body.dark ::-webkit-scrollbar-thumb {
+    background: #444b5a;
+}
+#toggle-dark {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #23272f;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    z-index: 2;
+}
+#toggle-dark::before {
+    content: '\1F319'; /* crescent moon emoji */
+    font-size: 1.2em;
+}
+body.dark #toggle-dark {
+    background: #f7fafd;
+    color: #23272f;
+}
+body.dark #toggle-dark::before {
+    content: '\2600'; /* sun emoji */
 }

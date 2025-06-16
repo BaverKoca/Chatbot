@@ -28,5 +28,10 @@
     "question": "hi",
     "answer": "A simple \"hi\"!\n\nAccording to Merriam-Webster Dictionary (https://www.merriam-webster.com/dictionary/hi), \"hi\" is used especially as a greeting, and it's also an abbreviation for several other things.\n\nAs a greeting, \"hi\" means \"hello!\" (Source: https://www.dictionary.com/browse/hi).\n\nThat's the basics of \"hi\"!",
     "rating": 1
+  },
+  {
+    "question": "give me a advice about make a LLama3 Chatbot :)",
+    "answer": "Based on the provided web information, here are some pieces of advice for making a Llama3 chatbot:\n\n1. **Use Retrieval-Augmented Generation (RAG)**: According to the Reddit post from November 2024, you can create a chatbot using RAG with Llama3 (1B model). [1]\n2. **Create a vector DB**: For building your local Vector Store, refer to @mlauber71's content on Llama3 and KNIME. This will help you create a database for your chatbot. [2]\n3. **Fine-tune the LLM on custom data**: As mentioned in the Reddit post from July 2023, fine-tuning the LLM (Large Language Model) on your company's custom data can be beneficial. This will make the chatbot more effective and tailored to their specific needs. [3]\n\nBy following these steps, you'll be well on your way to creating a robust Llama3 chatbot.\n\nReferences:\n\n[1] https://www.reddit.com/r/LLMDevs/comments/1gvwcnz/help_needed_building_a_chatbot_using_rag_and/\n\n[2] https://forum.knime.com/t/help-kindly-needed-with-creating-a-chatbot/82302\n\n[3] https://www.reddit.com/r/LocalLLaMA/comments/14vnfh2/my_experience_on_starting_with_fine_tuning_llms/",
+    "rating": 1
   }
 ]

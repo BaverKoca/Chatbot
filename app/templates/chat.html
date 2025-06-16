@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="chat-container">
+        <button id="toggle-dark" title="Toggle dark mode"></button>
         <h2>
             <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png" alt="Bot" style="height:32px;vertical-align:middle;margin-right:8px;">LLaMA3 Internet QA Bot
         </h2>
@@ -18,9 +19,14 @@
             <button type="submit">Send</button>
         </form>
         <div style="text-align:center;margin-top:18px;font-size:0.95em;color:#888;">
-            <span>Powered by LLaMA3:8B, Ollama, FastAPI, and Google Search<br>Developed by Baver Koca</span>
+            <span>Powered by LLaMA3:8B, Ollama, FastAPI, and Google Search<br>Developed by Baver Koca.</span>
         </div>
     </div>
     <script src="/static/chat.js"></script>
+    <script>
+    document.getElementById('toggle-dark').onclick = function() {
+        document.body.classList.toggle('dark');
+    };
+    </script>
 </body>
 </html>
