@@ -1,5 +1,5 @@
-import requests
 import os
+import requests
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")
@@ -15,9 +15,5 @@ async def search_web(query: str, num_results: int = 5):
     resp = requests.get(url, params=params)
     resp.raise_for_status()
     items = resp.json().get("items", [])
-    results = []
-    for item in items:
-        snippet = item.get("snippet", "")
-        link = item.get("link", "")
-        results.append(f"{snippet}\nSource: {link}")
+    results = [item.get("snippet", "") for item in items]
     return results

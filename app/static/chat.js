@@ -24,6 +24,7 @@ chatForm.addEventListener('submit', async (e) => {
             body: JSON.stringify({ question })
         });
         const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || 'Error');
         chatBox.lastChild.textContent = data.answer;
     } catch (err) {
         chatBox.lastChild.textContent = 'Error: Could not get response.';

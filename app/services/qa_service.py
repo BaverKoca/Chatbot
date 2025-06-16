@@ -10,7 +10,7 @@ async def answer_question(question: str):
     if not llama_answer or "I don't know" in llama_answer or "not sure" in llama_answer.lower():
         web_results = await search_web(clean_q)
         summaries = summarize_texts(web_results)
-        final_prompt = f"User question: {clean_q}\n\nWeb summaries: {summaries}\n\nAnswer the question clearly and concisely."
+        final_prompt = f"User question: {clean_q}\n\nWeb summaries:\n{summaries}\n\nAnswer the question using the above information."
         final_answer = await get_llama_answer(final_prompt)
         return final_answer, "internet+llama"
     return llama_answer, "llama"
