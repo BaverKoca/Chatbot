@@ -1,6 +1,12 @@
-# LLaMA3 Internet QA Bot
+![Chatbot1](https://github.com/user-attachments/assets/5591c21e-85c7-48a1-b71d-2d1319f15b7f)# LLaMA3 Internet QA Bot
 
 A modern, production-ready Retrieval-Augmented Generation (RAG) chatbot that answers user questions using the LLaMA 3:8B model (via Ollama) and always brings you the latest information from the web.
+
+---
+
+## 🖼️ Screenshots
+![Image](https://github.com/user-attachments/assets/9bf32d90-f97b-4fa6-a2c6-309a49cf3e8e)
+![Image](https://github.com/user-attachments/assets/7b47c7db-76cc-4325-8acd-87cc6d8578b6)
 
 ---
 
