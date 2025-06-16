@@ -5,8 +5,8 @@ A modern, production-ready Retrieval-Augmented Generation (RAG) chatbot that ans
 ---
 
 ## 🖼️ Screenshots
-![Image](https://github.com/user-attachments/assets/9bf32d90-f97b-4fa6-a2c6-309a49cf3e8e)
-![Image](https://github.com/user-attachments/assets/7b47c7db-76cc-4325-8acd-87cc6d8578b6)
+![Image](https://github.com/user-attachments/assets/09f9365f-aa66-4d29-a810-43623335ce4e)
+![Image](https://github.com/user-attachments/assets/03cc4558-3a77-4c6e-92d0-e2a737d29e61)
 
 ---
 
