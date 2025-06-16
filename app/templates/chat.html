@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLaMA3 Chatbot</title>
+    <link rel="stylesheet" href="/static/chat.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png" alt="Bot" style="height:32px;vertical-align:middle;margin-right:8px;">LLaMA3 Internet QA Bot
+        </h2>
+        <div id="chat-box" class="chat-box"></div>
+        <form id="chat-form" autocomplete="off">
+            <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off" required />
+            <button type="submit">Send</button>
+        </form>
+        <div style="text-align:center;margin-top:18px;font-size:0.95em;color:#888;">
+            <span>Powered by LLaMA3:8B, Ollama, FastAPI, and Google Search</span>
+        </div>
+    </div>
+    <script src="/static/chat.js"></script>
+</body>
+</html>
