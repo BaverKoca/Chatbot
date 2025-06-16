@@ -17,4 +17,5 @@ async def ask_question(request: QuestionRequest):
         answer, source = await answer_question(request.question)
         return AnswerResponse(answer=answer, source=source)
     except Exception as e:
+        print("ERROR:", e)
         raise HTTPException(status_code=500, detail=str(e))
