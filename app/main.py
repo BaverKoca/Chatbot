@@ -1,12 +1,16 @@
 from fastapi import FastAPI
 from app.api.routes import router
+from app.api.feedback import router as feedback_router
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.requests import Request
 from fastapi.responses import HTMLResponse
 
 app = FastAPI(title="LLaMA3 Internet QA Bot")
+
 app.include_router(router)
+app.include_router(feedback_router)
+
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
 
