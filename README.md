@@ -24,8 +24,8 @@ A professional, production-ready chatbot API that answers user questions using t
 2. **Create and configure your environment variables**
    - Copy `.env.example` to `.env` and fill in your Google API keys:
      ```env
-     GOOGLE_API_KEY=your_google_api_key
-     GOOGLE_CSE_ID=your_custom_search_engine_id
+     GOOGLE_API_KEY=GOOGLE_API_KEY
+     GOOGLE_CSE_ID=GOOGLE_CSE_ID
      ```
 3. **(Recommended) Create and activate a virtual environment**
    ```sh
