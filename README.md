@@ -27,7 +27,7 @@ A modern, production-ready Retrieval-Augmented Generation (RAG) chatbot that ans
 
 1. **Clone the repository**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/BaverKoca/Chatbot.git
    cd Chatbot
    ```
 2. **Create and configure your environment variables**
