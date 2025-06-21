@@ -10,7 +10,7 @@ FEEDBACK_FILE = os.path.join(os.path.dirname(__file__), '../../feedback.json')
 class FeedbackRequest(BaseModel):
     question: str
     answer: str
-    rating: int  # 1=like, 0=dislike
+    rating: int
 
 @router.post("/feedback")
 async def submit_feedback(feedback: FeedbackRequest):
